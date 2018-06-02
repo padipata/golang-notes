@@ -7,7 +7,7 @@ Golang takes notes from the beginning to the actual combat
 <!-- TOC -->
 
 - [环境安装](#环境安装)
-- [Hello world](#hello world)
+- [Hello world](#Hello world)
 
 <!-- /TOC -->
 ---
