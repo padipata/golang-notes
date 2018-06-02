@@ -1,6 +1,17 @@
 # Golang-notes
 Golang takes notes from the beginning to the actual combat
 
+目录
+===
+
+<!-- TOC -->
+
+- [环境安装](#环境安装)
+
+<!-- /TOC -->
+---
+
+
 ## 环境安装
 ```shell
 #安装包下载地址（mac使用pkg格式）
