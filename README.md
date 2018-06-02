@@ -6,14 +6,17 @@ Golang takes notes from the beginning to the actual combat
 
 <!-- TOC -->
 
-- [环境安装](#环境安装)
-- [Hello world](#hello-world)
+- [基础入门](#基础入门)
+    - [环境安装](#环境安装)
+    - [Hello world](#hello-world)
+    - [基础变量](基础变量)
 
 <!-- /TOC -->
 ---
 
+## 基础入门
 
-## 环境安装
+### 环境安装
 ```shell
 #安装包下载地址（mac使用pkg格式）
 https://golang.google.cn/dl/
@@ -51,4 +54,44 @@ func main(){
 go run hello.js
 go build hello.js
 ```
+
+### 基础变量
+
+```go
+// 当前项目的包名
+package main
+
+// 导入其他的包
+import (
+	io "fmt"
+)
+
+// 常量赋值
+const PI = 3.14
+
+// 全局变量
+var name = "gopher"
+
+// 一般变量
+type newType int
+
+// 结构类型的声明
+type  gopher struct{
+
+}
+
+// 接口的声明
+type golang interface{
+
+}
+
+// 由 main 函数作为程序的入口点启动
+func main() {
+	io.Println(PI)
+}
+```
+
+***注意：golang中，使用首字母大小写来决定该 变量 常量 类型 接口 结构 函数 是否被外部调用
+（小写：public，大写：private）***
+
 
