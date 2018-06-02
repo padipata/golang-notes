@@ -7,6 +7,7 @@ Golang takes notes from the beginning to the actual combat
 <!-- TOC -->
 
 - [环境安装](#环境安装)
+- [Hello world](#Helloworld)
 
 <!-- /TOC -->
 ---
@@ -29,4 +30,25 @@ export PATH=$PATH:/usr/local/go/bin
 go
 ```
 
+### Hello world
+> touch hello.go
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main(){
+	fmt.Println("hello world")
+}
+```
+
+> 运行及打包
+
+```go
+go run hello.js
+go build hello.js
+```
 
