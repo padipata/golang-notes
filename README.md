@@ -67,7 +67,10 @@ import (
 )
 
 // 常量赋值
-const PI = 3.14
+// const PI = 3.14
+
+// 没有赋值变量时，结果为零值
+var PI int
 
 // 全局变量
 var name = "gopher"
