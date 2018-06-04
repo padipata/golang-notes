@@ -55,7 +55,7 @@ func main() {
 		for i := 0; i < 10; i++ {
 			fmt.Println(i)
 			if i > 3 {
-				break LABEL3
+				continue LABEL3
 			}
 		}
 
