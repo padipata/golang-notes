@@ -10,9 +10,10 @@ Golang takes notes from the beginning to the actual combat
     - [环境安装](#环境安装)
     - [Hello world](#hello-world)
     - [基础变量](基础变量)
+    - [基础运算](基础运算)
 
 <!-- /TOC -->
----
+
 
 ## 基础入门
 
@@ -61,7 +62,7 @@ go build hello.js
 // 当前项目的包名
 package main
 
-// 导入其他的包
+// 导入包
 import (
 	io "fmt"
 )
@@ -71,6 +72,7 @@ import (
 
 // 没有赋值变量时，结果为零值
 var PI int
+// var PI int = 123
 
 // 全局变量
 var name = "gopher"
@@ -96,5 +98,50 @@ func main() {
 
 ***注意：golang中，使用首字母大小写来决定该 变量 常量 类型 接口 结构 函数 是否被外部调用
 （小写：public，大写：private）***
+
+### 基础运算
+```go
+// 当前项目的包名
+package main
+
+// 导入包
+import (
+	"fmt"
+)
+
+const (
+	a int = 1
+	b string = "abc"
+)
+
+// 由 main 函数作为程序的入口点启动
+func main() {
+	c:= len(b);
+	for i := 0; i < c; i++ {
+		fmt.Println(i)
+	}
+
+	a := 1
+	switch a {
+	case 0:
+		fmt.Println("a=0")
+	case 1:
+		fmt.Println("a=1")
+	case 2:
+		fmt.Println("a=2")
+	default:
+		fmt.Println("None")
+	}
+
+	LABEL1:
+		for i := 0; i < 10; i++ {
+			fmt.Println(i)
+			if i > 3 {
+				break LABEL1
+			}
+		}
+
+}
+```
 
 
