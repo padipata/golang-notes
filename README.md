@@ -9,8 +9,8 @@ Golang takes notes from the beginning to the actual combat
 - [基础入门](#基础入门)
     - [环境安装](#环境安装)
     - [Hello world](#hello-world)
-    - [基础变量](基础变量)
-    - [基础运算](基础运算)
+    - [基础变量](#基础变量)
+    - [基础运算](#基础运算)
 
 <!-- /TOC -->
 
