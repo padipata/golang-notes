@@ -102,9 +102,10 @@ func main() {
 ### 基础运算
 ```go
 // 当前项目的包名
+// 当前项目的包名
 package main
 
-// 导入包
+// 导入其他的包
 import (
 	"fmt"
 )
@@ -133,11 +134,32 @@ func main() {
 		fmt.Println("None")
 	}
 
+	// 跳出到 LABEL1 之外，可以是任意循环
 	LABEL1:
+		for {
+			for i := 0; i < 10; i++ {
+				fmt.Println(i)
+				if i > 3 {
+					break LABEL1
+				}
+			}
+		}
+			
+	// 跳出到 LABEL2 之外，LABEL2 需要写在后面
 		for i := 0; i < 10; i++ {
 			fmt.Println(i)
 			if i > 3 {
-				break LABEL1
+				goto LABEL2
+			}
+		}
+	LABEL2:
+
+	// 跳出到 LABEL3 之外，必须是有限循环
+	LABEL3:
+		for i := 0; i < 10; i++ {
+			fmt.Println(i)
+			if i > 3 {
+				break LABEL3
 			}
 		}
 
