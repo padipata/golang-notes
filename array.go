@@ -24,5 +24,37 @@ func main() {
 	fmt.Println(b);
 	fmt.Println(c);
 	fmt.Println(d);
-}
 
+	var arr1 [5]int
+
+	for i := 0; i < len(arr1); i++ {
+		arr1[i] = i * 2
+	}
+
+	for i := 0; i < len(arr1); i++ {
+		fmt.Printf("Array at index %d is %d\n",i,arr1[i])
+	}
+
+	// IDIOM
+	arr2 := [...]string{"a", "b", "c", "d"}
+
+	for i := range arr2 {
+		fmt.Println("Arrary item", i, "is", arr2[i])
+	}
+
+	//多维数组
+	const(
+		WIDTH = 5
+		HEIGHT = 3
+	)
+
+	var screen [WIDTH][HEIGHT]int
+
+	for y := 0; y < HEIGHT; y++ {
+		for x := 0; x < WIDTH; x++ {
+			screen[x][y] = x
+		}
+		fmt.Printf("Array at index %d\n",screen)
+	}
+	
+}
